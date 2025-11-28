@@ -1,0 +1,10 @@
+{
+  "name": "mindflow-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:client": "cd client && npm run dev",
+    "start:server": "cd server && npm run dev",
+    "install:all": "cd client && npm install && cd ../server && npm install"
+  }
+}

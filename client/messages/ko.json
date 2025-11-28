@@ -1,0 +1,98 @@
+{
+  "common": {
+    "appName": "MindFlow",
+    "tagline": "감정과 사주를 융합한 AI 인사이트"
+  },
+  "home": {
+    "title": "MindFlow",
+    "subtitle": "감정과 사주를 융합한 AI 인사이트",
+    "onboarding": {
+      "title": "온보딩",
+      "description": "기본 정보를 입력하고 시작하세요"
+    },
+    "checkin": {
+      "title": "체크인",
+      "description": "오늘의 감정을 기록하세요"
+    },
+    "insight": {
+      "title": "인사이트",
+      "description": "AI가 분석한 결과를 확인하세요"
+    },
+    "history": {
+      "title": "히스토리",
+      "description": "감정 변화를 시각화하여 확인하세요"
+    },
+    "goTo": "이동하기",
+    "copyright": "© 2024 MindFlow. All rights reserved."
+  },
+  "onboarding": {
+    "title": "MindFlow",
+    "subtitle": "당신의 감정과 운세를 분석합니다",
+    "birthDate": "생년월일",
+    "birthTime": "출생 시간",
+    "gender": "성별",
+    "genderPlaceholder": "선택하세요",
+    "male": "남성",
+    "female": "여성",
+    "other": "기타",
+    "submit": "분석 시작",
+    "privacyNote": "정보는 사주 계산과 개인화 Insight 생성에만 사용됩니다"
+  },
+  "checkin": {
+    "title": "오늘의 체크인",
+    "emotionQuestion": "오늘의 감정은 어떠신가요?",
+    "memoLabel": "메모 (선택사항)",
+    "memoPlaceholder": "오늘 하루는 어땠나요? 자유롭게 적어보세요...",
+    "submit": "오늘의 리포트 생성",
+    "selectEmotion": "감정을 선택해주세요",
+    "analyzing": "AI 분석 중...",
+    "emotions": {
+      "happy": "행복",
+      "sad": "슬픔",
+      "angry": "짜증",
+      "anxious": "불안",
+      "calm": "평온",
+      "tired": "피곤",
+      "grateful": "감사",
+      "depressed": "우울"
+    }
+  },
+  "insight": {
+    "title": "오늘의 인사이트",
+    "emotionReport": {
+      "badge": "감정 리포트",
+      "title": "오늘의 감정 분석",
+      "mainEmotion": "주요 감정",
+      "description": "오늘 하루 전반적으로 긍정적인 감정 상태를 유지하고 계시네요. 이러한 기분을 잘 유지하시면 좋을 것 같습니다.",
+      "intensity": "감정 강도"
+    },
+    "sajuInsight": {
+      "badge": "사주 인사이트",
+      "title": "오늘의 운세",
+      "fortune": "일진: 중길(中吉)",
+      "description": "오늘은 새로운 시작에 좋은 날입니다. 특히 오후 시간대에 중요한 결정을 내리면 좋은 결과를 얻을 수 있습니다.",
+      "lifestyleTips": "라이프스타일 팁",
+      "tips": "• 수분 섭취를 충분히 하세요\n• 가벼운 산책이 도움이 됩니다\n• 긍정적인 대화를 나누세요"
+    },
+    "combinedInsight": {
+      "badge": "융합 인사이트",
+      "title": "AI 맞춤 가이드",
+      "coreMessage": "✨ 오늘의 핵심 메시지",
+      "description": "당신의 긍정적인 감정 상태와 좋은 운세가 만나 오늘은 특별한 하루가 될 것입니다. 자신감을 가지고 도전해보세요.",
+      "recommendations": "추천 활동",
+      "activities": "• 미뤄왔던 일을 시작하기\n• 소중한 사람과 시간 보내기\n• 새로운 취미 탐색하기"
+    },
+    "viewHistory": "이전 기록 보기",
+    "newCheckin": "새로운 체크인"
+  },
+  "history": {
+    "title": "감정 기록",
+    "subtitle": "나의 감정 변화를 확인해보세요",
+    "weeklyChart": "주간 감정 변화",
+    "chartNote": "* 감정 강도는 0-100 사이의 값으로 표시됩니다",
+    "timeline": "타임라인",
+    "intensity": "감정 강도",
+    "viewDetails": "상세보기",
+    "newCheckin": "새로운 체크인"
+  }
+}

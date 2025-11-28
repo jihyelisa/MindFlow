@@ -1,0 +1,98 @@
+{
+  "common": {
+    "appName": "MindFlow",
+    "tagline": "AI Insights Combining Emotions and Fortune"
+  },
+  "home": {
+    "title": "MindFlow",
+    "subtitle": "AI Insights Combining Emotions and Fortune",
+    "onboarding": {
+      "title": "Onboarding",
+      "description": "Enter your basic information to get started"
+    },
+    "checkin": {
+      "title": "Check-in",
+      "description": "Record your emotions today"
+    },
+    "insight": {
+      "title": "Insight",
+      "description": "View AI-analyzed results"
+    },
+    "history": {
+      "title": "History",
+      "description": "Visualize your emotional changes"
+    },
+    "goTo": "Go",
+    "copyright": "© 2024 MindFlow. All rights reserved."
+  },
+  "onboarding": {
+    "title": "MindFlow",
+    "subtitle": "Analyze your emotions and fortune",
+    "birthDate": "Birth Date",
+    "birthTime": "Birth Time",
+    "gender": "Gender",
+    "genderPlaceholder": "Select",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "submit": "Start Analysis",
+    "privacyNote": "Information is used only for fortune calculation and personalized insights"
+  },
+  "checkin": {
+    "title": "Today's Check-in",
+    "emotionQuestion": "How are you feeling today?",
+    "memoLabel": "Memo (Optional)",
+    "memoPlaceholder": "How was your day? Feel free to write...",
+    "submit": "Generate Today's Report",
+    "selectEmotion": "Please select an emotion",
+    "analyzing": "AI analyzing...",
+    "emotions": {
+      "happy": "Happy",
+      "sad": "Sad",
+      "angry": "Angry",
+      "anxious": "Anxious",
+      "calm": "Calm",
+      "tired": "Tired",
+      "grateful": "Grateful",
+      "depressed": "Depressed"
+    }
+  },
+  "insight": {
+    "title": "Today's Insight",
+    "emotionReport": {
+      "badge": "Emotion Report",
+      "title": "Today's Emotion Analysis",
+      "mainEmotion": "Main Emotion",
+      "description": "You've maintained a generally positive emotional state throughout the day. It would be great to keep this mood going.",
+      "intensity": "Emotion Intensity"
+    },
+    "sajuInsight": {
+      "badge": "Fortune Insight",
+      "title": "Today's Fortune",
+      "fortune": "Fortune: Moderately Good",
+      "description": "Today is a good day for new beginnings. Making important decisions in the afternoon will yield good results.",
+      "lifestyleTips": "Lifestyle Tips",
+      "tips": "• Stay well hydrated\n• A light walk will help\n• Engage in positive conversations"
+    },
+    "combinedInsight": {
+      "badge": "Combined Insight",
+      "title": "AI Personalized Guide",
+      "coreMessage": "✨ Today's Core Message",
+      "description": "Your positive emotional state combined with good fortune will make today a special day. Challenge yourself with confidence.",
+      "recommendations": "Recommended Activities",
+      "activities": "• Start something you've been putting off\n• Spend time with loved ones\n• Explore new hobbies"
+    },
+    "viewHistory": "View History",
+    "newCheckin": "New Check-in"
+  },
+  "history": {
+    "title": "Emotion Records",
+    "subtitle": "Check your emotional changes",
+    "weeklyChart": "Weekly Emotion Changes",
+    "chartNote": "* Emotion intensity is displayed as a value between 0-100",
+    "timeline": "Timeline",
+    "intensity": "Emotion Intensity",
+    "viewDetails": "View Details",
+    "newCheckin": "New Check-in"
+  }
+}
