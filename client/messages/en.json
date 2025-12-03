@@ -11,11 +11,11 @@
       "description": "Enter your basic information to get started"
     },
     "checkin": {
-      "title": "Check-in",
+      "title": "record your feeling",
       "description": "Record your emotions today"
     },
     "insight": {
-      "title": "Insight",
+      "title": "Korean fortune cookie, saju",
       "description": "View AI-analyzed results"
     },
     "history": {

@@ -11,11 +11,11 @@
       "description": "기본 정보를 입력하고 시작하세요"
     },
     "checkin": {
-      "title": "체크인",
-      "description": "오늘의 감정을 기록하세요"
+      "title": "기분 기록하기",
+      "description": "오늘의 감정을 기록해보세요"
     },
     "insight": {
-      "title": "인사이트",
+      "title": "한국 포춘쿠키, 사주",
       "description": "AI가 분석한 결과를 확인하세요"
     },
     "history": {

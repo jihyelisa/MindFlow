@@ -11,20 +11,6 @@ export default function Home() {
 
   const pages = [
     {
-      title: t('onboarding.title'),
-      description: t('onboarding.description'),
-      icon: FiUser,
-      path: '/onboarding',
-      color: 'purple',
-    },
-    {
-      title: t('checkin.title'),
-      description: t('checkin.description'),
-      icon: FiHeart,
-      path: '/check-in',
-      color: 'pink',
-    },
-    {
       title: t('insight.title'),
       description: t('insight.description'),
       icon: FiBarChart2,
@@ -32,11 +18,11 @@ export default function Home() {
       color: 'blue',
     },
     {
-      title: t('history.title'),
-      description: t('history.description'),
-      icon: FiClock,
-      path: '/history',
-      color: 'cyan',
+      title: t('checkin.title'),
+      description: t('checkin.description'),
+      icon: FiHeart,
+      path: '/check-in',
+      color: 'pink',
     },
   ];
 
