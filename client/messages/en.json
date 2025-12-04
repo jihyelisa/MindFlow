@@ -22,12 +22,18 @@
       "title": "History",
       "description": "Visualize your emotional changes"
     },
+    "saju": {
+      "title": "Start Saju Analysis",
+      "description": "Discover your fortune through traditional Korean Saju"
+    },
     "goTo": "Go",
     "copyright": "© 2024 MindFlow. All rights reserved."
   },
   "onboarding": {
     "title": "MindFlow",
     "subtitle": "Analyze your emotions and fortune",
+    "name": "Name",
+    "namePlaceholder": "Enter your name",
     "birthDate": "Birth Date",
     "birthTime": "Birth Time",
     "gender": "Gender",
@@ -94,5 +100,54 @@
     "intensity": "Emotion Intensity",
     "viewDetails": "View Details",
     "newCheckin": "New Check-in"
+  },
+  "sajuMenu": {
+    "title": "Choose Your Fortune",
+    "subtitle": "Select the type of fortune reading you'd like to see",
+    "today": {
+      "title": "Today's Fortune",
+      "description": "Discover what today holds for you"
+    },
+    "month": {
+      "title": "This Month's Fortune",
+      "description": "See your fortune for the entire month"
+    },
+    "life": {
+      "title": "Life Flow",
+      "description": "Understand the overall flow of your life"
+    },
+    "select": "Select"
+  },
+  "sajuResult": {
+    "today": {
+      "title": "Today's Fortune",
+      "badge": "Daily Fortune",
+      "fortuneTitle": "Today's Fortune Reading",
+      "fortuneLevel": "Fortune: Very Good",
+      "fortuneDescription": "Today is a day full of positive energy. New opportunities may come your way, so stay alert and be ready to seize them.",
+      "adviceTitle": "Today's Advice",
+      "advice": "• Start your day with a positive mindset\n• Be open to new connections\n• Trust your intuition in decision-making"
+    },
+    "month": {
+      "title": "This Month's Fortune",
+      "badge": "Monthly Fortune",
+      "fortuneTitle": "Monthly Fortune Reading",
+      "fortuneLevel": "Fortune: Good",
+      "fortuneDescription": "This month brings steady progress and growth. Focus on your goals and maintain consistency in your efforts.",
+      "adviceTitle": "Monthly Advice",
+      "advice": "• Set clear goals for the month\n• Build strong relationships\n• Take care of your health and well-being"
+    },
+    "life": {
+      "title": "Life Flow",
+      "subtitle": "Understanding your life's journey",
+      "badge": "Life Reading",
+      "fortuneTitle": "Your Life Flow",
+      "flowTitle": "Overall Life Direction",
+      "flowDescription": "Your life path shows a journey of continuous growth and learning. You have the potential to achieve great things through perseverance and wisdom.",
+      "adviceTitle": "Life Guidance",
+      "advice": "• Embrace change as an opportunity\n• Cultivate meaningful relationships\n• Stay true to your values and principles"
+    },
+    "backToMenu": "Back to Menu",
+    "backToHome": "Back to Home"
   }
 }

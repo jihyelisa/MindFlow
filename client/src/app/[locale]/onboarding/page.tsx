@@ -20,6 +20,7 @@ export default function OnboardingPage() {
   const router = useRouter();
   const t = useTranslations('onboarding');
   const [formData, setFormData] = useState({
+    name: '',
     birthDate: '',
     birthTime: '',
     gender: '',
@@ -28,7 +29,7 @@ export default function OnboardingPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // TODO: Save data to backend or local storage
-    router.push('/check-in');
+    router.push('/saju/menu');
   };
 
   return (
@@ -46,6 +47,15 @@ export default function OnboardingPage() {
             <Card.Body>
               <form onSubmit={handleSubmit}>
                 <Stack gap={6}>
+                  <Field label={t('name')} required>
+                    <Input
+                      type="text"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      placeholder={t('namePlaceholder')}
+                    />
+                  </Field>
+
                   <Field label={t('birthDate')} required>
                     <Input
                       type="date"
@@ -54,7 +64,7 @@ export default function OnboardingPage() {
                     />
                   </Field>
 
-                  <Field label={t('birthTime')} required>
+                  <Field label={t('birthTime')}>
                     <Input
                       type="time"
                       value={formData.birthTime}

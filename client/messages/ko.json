@@ -22,12 +22,18 @@
       "title": "히스토리",
       "description": "감정 변화를 시각화하여 확인하세요"
     },
+    "saju": {
+      "title": "사주 분석 시작하기",
+      "description": "전통 사주를 통해 당신의 운세를 알아보세요"
+    },
     "goTo": "이동하기",
     "copyright": "© 2024 MindFlow. All rights reserved."
   },
   "onboarding": {
     "title": "MindFlow",
     "subtitle": "당신의 감정과 운세를 분석합니다",
+    "name": "이름",
+    "namePlaceholder": "이름을 입력하세요",
     "birthDate": "생년월일",
     "birthTime": "출생 시간",
     "gender": "성별",
@@ -94,5 +100,54 @@
     "intensity": "감정 강도",
     "viewDetails": "상세보기",
     "newCheckin": "새로운 체크인"
+  },
+  "sajuMenu": {
+    "title": "운세 선택하기",
+    "subtitle": "보고 싶은 운세의 종류를 선택하세요",
+    "today": {
+      "title": "오늘의 운세",
+      "description": "오늘 하루의 운세를 확인하세요"
+    },
+    "month": {
+      "title": "이번 달의 운세",
+      "description": "한 달 동안의 운세를 확인하세요"
+    },
+    "life": {
+      "title": "내 인생의 흐름",
+      "description": "인생 전반의 흐름을 이해하세요"
+    },
+    "select": "선택하기"
+  },
+  "sajuResult": {
+    "today": {
+      "title": "오늘의 운세",
+      "badge": "일일 운세",
+      "fortuneTitle": "오늘의 운세 풀이",
+      "fortuneLevel": "운세: 대길",
+      "fortuneDescription": "오늘은 긍정적인 에너지가 가득한 날입니다. 새로운 기회가 찾아올 수 있으니 경계를 늘추지 말고 준비하세요.",
+      "adviceTitle": "오늘의 조언",
+      "advice": "• 긍정적인 마음가짐으로 하루를 시작하세요\n• 새로운 인연에 열려 있으세요\n• 결정을 내릴 때 직관을 믿으세요"
+    },
+    "month": {
+      "title": "이번 달의 운세",
+      "badge": "월간 운세",
+      "fortuneTitle": "월간 운세 풀이",
+      "fortuneLevel": "운세: 길",
+      "fortuneDescription": "이번 달은 꾸준한 발전과 성장을 가져옵니다. 목표에 집중하고 꾸준히 노력하세요.",
+      "adviceTitle": "월간 조언",
+      "advice": "• 이번 달의 명확한 목표를 세우세요\n• 좋은 관계를 구축하세요\n• 건강과 웰빙을 챙기세요"
+    },
+    "life": {
+      "title": "내 인생의 흐름",
+      "subtitle": "당신의 인생 여정 이해하기",
+      "badge": "인생 풀이",
+      "fortuneTitle": "당신의 인생 흐름",
+      "flowTitle": "전반적인 인생 방향",
+      "flowDescription": "당신의 인생 경로는 지속적인 성장과 배움의 여정을 보여줍니다. 인내와 지혜를 통해 훌륭한 것들을 성취할 잠재력을 가지고 있습니다.",
+      "adviceTitle": "인생 지침",
+      "advice": "• 변화를 기회로 받아들이세요\n• 의미 있는 관계를 가꾸세요\n• 당신의 가치와 원칙에 충실하세요"
+    },
+    "backToMenu": "메뉴로 돌아가기",
+    "backToHome": "홈으로 돌아가기"
   }
 }

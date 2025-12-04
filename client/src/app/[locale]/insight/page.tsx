@@ -14,16 +14,21 @@ import {
 } from '@chakra-ui/react';
 import { useRouter } from '@/navigation';
 import { useTranslations } from 'next-intl';
+import { useEffect, useState } from 'react';
 
 export default function InsightPage() {
   const router = useRouter();
   const t = useTranslations('insight');
 
-  const today = new Date().toLocaleDateString('ko-KR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+  const [today, setToday] = useState('');
+
+  useEffect(() => {
+    setToday(new Date().toLocaleDateString('ko-KR', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }));
+  }, []);
 
   return (
     <Box minH="100vh" bg="gray.50" py={12}>

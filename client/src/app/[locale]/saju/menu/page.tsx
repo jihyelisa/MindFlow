@@ -1,20 +1,43 @@
 'use client';
 
-import { Box, Container, Heading, Stack, SimpleGrid, Card, Text, Button } from '@chakra-ui/react';
+import {
+  Box,
+  Container,
+  Heading,
+  Stack,
+  SimpleGrid,
+  Card,
+  Text,
+  Button,
+} from '@chakra-ui/react';
 import { useRouter } from '@/navigation';
-import { FiUser, FiHeart, FiBarChart2, FiClock } from 'react-icons/fi';
+import { FiSun, FiCalendar, FiTrendingUp } from 'react-icons/fi';
 import { useTranslations } from 'next-intl';
 
-export default function Home() {
+export default function SajuMenuPage() {
   const router = useRouter();
-  const t = useTranslations('home');
+  const t = useTranslations('sajuMenu');
 
-  const pages = [
+  const menuItems = [
     {
-      title: t('saju.title'),
-      description: t('saju.description'),
-      icon: FiBarChart2,
-      path: '/onboarding',
+      title: t('today.title'),
+      description: t('today.description'),
+      icon: FiSun,
+      path: '/saju/today',
+      color: 'yellow',
+    },
+    {
+      title: t('month.title'),
+      description: t('month.description'),
+      icon: FiCalendar,
+      path: '/saju/month',
+      color: 'blue',
+    },
+    {
+      title: t('life.title'),
+      description: t('life.description'),
+      icon: FiTrendingUp,
+      path: '/saju/life',
       color: 'purple',
     },
   ];
@@ -40,20 +63,20 @@ export default function Home() {
             </Text>
           </Stack>
 
-          <SimpleGrid columns={{ base: 1, md: 2 }} gap={8} w="full" maxW="4xl" mx="auto">
-            {pages.map((page) => {
-              const IconComponent = page.icon;
+          <SimpleGrid columns={{ base: 1, md: 3 }} gap={8} w="full">
+            {menuItems.map((item) => {
+              const IconComponent = item.icon;
               return (
                 <Card.Root
-                  key={page.path}
+                  key={item.path}
                   _hover={{ 
                     transform: 'translateY(-8px)', 
                     shadow: '2xl',
-                    borderColor: `${page.color}.200`
+                    borderColor: `${item.color}.200`
                   }}
                   transition="all 0.3s ease-in-out"
                   cursor="pointer"
-                  onClick={() => router.push(page.path)}
+                  onClick={() => router.push(item.path)}
                   borderRadius="3xl"
                   shadow="lg"
                   bg="white/80"
@@ -63,33 +86,31 @@ export default function Home() {
                   overflow="hidden"
                 >
                   <Card.Body p={8}>
-                    <Stack gap={6} align="start">
+                    <Stack gap={6} align="center" textAlign="center">
                       <Box 
                         p={4} 
-                        bg={`${page.color}.50`} 
-                        color={`${page.color}.500`}
+                        bg={`${item.color}.50`} 
+                        color={`${item.color}.500`}
                         borderRadius="2xl"
                         shadow="sm"
                       >
-                        <IconComponent size={32} />
+                        <IconComponent size={48} />
                       </Box>
-                      <Stack gap={3} align="start">
+                      <Stack gap={3} align="center">
                         <Heading size="lg" fontWeight="bold" color="gray.800">
-                          {page.title}
+                          {item.title}
                         </Heading>
-                        <Text color="gray.500" fontSize="lg" lineHeight="relaxed">
-                          {page.description}
+                        <Text color="gray.500" fontSize="md" lineHeight="relaxed">
+                          {item.description}
                         </Text>
                       </Stack>
                       <Button 
-                        variant="ghost" 
-                        colorPalette={page.color} 
+                        variant="solid" 
+                        colorPalette={item.color} 
                         size="lg"
-                        fontWeight="bold"
-                        px={0}
-                        _hover={{ bg: 'transparent', color: `${page.color}.600` }}
+                        w="full"
                       >
-                        {t('goTo')} <Box as="span" ml={2} transition="transform 0.2s" _groupHover={{ transform: 'translateX(4px)' }}>→</Box>
+                        {t('select')}
                       </Button>
                     </Stack>
                   </Card.Body>
@@ -97,12 +118,6 @@ export default function Home() {
               );
             })}
           </SimpleGrid>
-
-          <Box textAlign="center" pt={12}>
-            <Text fontSize="sm" color="gray.400" fontWeight="medium">
-              {t('copyright')}
-            </Text>
-          </Box>
         </Stack>
       </Container>
     </Box>

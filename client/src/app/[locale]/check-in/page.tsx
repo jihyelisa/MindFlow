@@ -11,7 +11,7 @@ import {
   Text,
   Card,
 } from '@chakra-ui/react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from '@/navigation';
 import { toaster } from '@/components/ui/toaster';
 import { useTranslations } from 'next-intl';
@@ -54,11 +54,15 @@ export default function CheckInPage() {
     }, 1500);
   };
 
-  const today = new Date().toLocaleDateString('ko-KR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+  const [today, setToday] = useState('');
+
+  useEffect(() => {
+    setToday(new Date().toLocaleDateString('ko-KR', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }));
+  }, []);
 
   return (
     <Box minH="100vh" bg="gray.50" py={12}>
