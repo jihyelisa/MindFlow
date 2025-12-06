@@ -6,6 +6,11 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Import routes
+const userRoutes = require('./routes/userRoutes');
+const sajuRoutes = require('./routes/sajuRoutes');
+const errorHandler = require('./middleware/errorHandler');
+
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -17,8 +22,18 @@ mongoose.connect(process.env.MONGODB_URI)
 
 // Routes
 app.get('/', (req, res) => {
-    res.send('MindFlow Backend API is running');
+    res.json({ 
+        success: true,
+        message: 'MindFlow Backend API is running',
+        version: '1.0.0'
+    });
 });
+
+app.use('/api/users', userRoutes);
+app.use('/api/saju', sajuRoutes);
+
+// Error handling middleware (must be last)
+app.use(errorHandler);
 
 // Start Server
 app.listen(PORT, () => {
